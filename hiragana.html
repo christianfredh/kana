@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hiragana</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="shuffle.js"></script>
+    <script src="characters.js"></script>
+<body>
+    <section class="practise">
+        <h1>Hiragana</h1>
+
+        <div class="character-container js_practise">
+
+        </div>
+    </section>
+    <section class="answers">
+        <h1>Answers</h1>
+
+        <div class="character-container js_answers">
+
+        </div>
+    </section>
+
+    <script>
+        const shuffledCharacters = shuffle(characters);
+
+        const practise = document.querySelector('.js_practise');
+        const answers = document.querySelector('.js_answers');
+
+        shuffledCharacters.forEach(function(character) {
+
+            const box = `
+            <div class="character-box">
+                <div class="question">${character.romanized}</div>
+                <div class="answer"></div>
+            </div>`;
+
+            practise.innerHTML += box;
+
+            const answerBox = `
+            <div class="character-box">
+                <div class="question">${character.romanized}</div>
+                <div class="answer">${character.hiragana}</div>
+            </div>`;
+
+            answers.innerHTML += answerBox;
+
+        }, this);
+    </script>
+</head>
+</body>
+</html>

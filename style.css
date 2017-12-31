@@ -1,0 +1,46 @@
+html {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+@media print{
+    /** {
+        display:inline;
+    }*/
+    /*.character-box {
+        page-break-inside:avoid;
+    }*/
+}
+
+.character-container {
+    display: flex;
+    flex-wrap: wrap;
+    /*page-break-inside: avoid;*/
+}
+
+.character-box {
+    border: 1px solid black;
+    width: 100px;
+    height: 130px;
+    margin: 0 20px 20px 0;
+    page-break-inside: avoid;
+}
+
+.question {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 2em;
+}
+
+.answers {
+    page-break-before: always;
+}
