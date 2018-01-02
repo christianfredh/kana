@@ -52,10 +52,11 @@ footer {
     align-items: center;
     height: 58px;
     font-size: 2em;
+    border-right: 1px solid black;
 }
 
 .answer:last-child {
-    border-left: 1px solid black;
+    border-right: none;
 }
 
 .answers {
