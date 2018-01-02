@@ -1,5 +1,10 @@
 html {
     font-family: Verdana, Geneva, sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 footer {
@@ -18,6 +23,8 @@ footer {
 }
 
 .character-box {
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid black;
     width: 90px;
     height: 90px;
@@ -31,18 +38,24 @@ footer {
 .question {
     border-bottom: 1px solid black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 30px;
-    page-break-inside: avoid;
+    width: 90px;
 }
 
 .answer {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 58px;
     font-size: 2em;
+}
+
+.answer:last-child {
+    border-left: 1px solid black;
 }
 
 .answers {
