@@ -20,8 +20,12 @@ footer {
 .character-box {
     border: 1px solid black;
     width: 90px;
-    height: 100px;
+    height: 90px;
     margin: 0 15px 15px 0;
+}
+
+.character-box:last-child {
+    margin: 0;
 }
 
 .question {
@@ -37,7 +41,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 60px;
     font-size: 2em;
 }
 
