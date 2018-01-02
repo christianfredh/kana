@@ -13,6 +13,12 @@ html {
 
 footer {
     font-size: .7em;
+    margin-top: 50px;
+}
+
+.further-resources {
+    font-size: .8em;
+    margin-top: 50px;
 }
 
 .character-container {
