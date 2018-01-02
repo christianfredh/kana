@@ -2,15 +2,6 @@ html {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-@media print{
-    /** {
-        display:inline;
-    }*/
-    /*.character-box {
-        page-break-inside:avoid;
-    }*/
-}
-
 footer {
     font-size: .7em;
     margin-top: 50px;
@@ -24,15 +15,13 @@ footer {
 .character-container {
     display: flex;
     flex-wrap: wrap;
-    /*page-break-inside: avoid;*/
 }
 
 .character-box {
     border: 1px solid black;
-    width: 100px;
-    height: 130px;
-    margin: 0 20px 20px 0;
-    page-break-inside: avoid;
+    width: 90px;
+    height: 100px;
+    margin: 0 15px 15px 0;
 }
 
 .question {
@@ -41,13 +30,14 @@ footer {
     justify-content: center;
     align-items: center;
     height: 30px;
+    page-break-inside: avoid;
 }
 
 .answer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 70px;
     font-size: 2em;
 }
 
