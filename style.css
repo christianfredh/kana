@@ -11,6 +11,10 @@ html {
     }*/
 }
 
+footer {
+    font-size: .7em;
+}
+
 .character-container {
     display: flex;
     flex-wrap: wrap;
